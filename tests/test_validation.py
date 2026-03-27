@@ -29,6 +29,7 @@ class TestSequenceValidator:
         r = ValidationResult()
         v._check_alphabet("ACGTACGT", r)
         assert r.is_valid
+        assert len(r.errors) == 0
 
     def test_invalid_nucleotides(self) -> None:
         v = self._validator()

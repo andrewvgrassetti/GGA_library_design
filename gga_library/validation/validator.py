@@ -178,7 +178,7 @@ class SequenceValidator:
 
         # Components
         for comp in [fragment.adapter_5p, fragment.overhang_5p,
-                      fragment.overhang_3p, fragment.adapter_3p]:
+                     fragment.overhang_3p, fragment.adapter_3p]:
             self.validate_component(comp, result)
 
         # Overhangs length
